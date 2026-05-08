@@ -1,0 +1,398 @@
+/* custom font*/
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('font1/IBMPlexMono-Thin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+/* reseting the browser's default margins, setting up size for the entire page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1ST PAGE HTML, SETIINGS*/
+
+/* font settings for body ,1st page */
+body {
+  font-family: 'IBMPlexMono', sans-serif;
+  background-color: #000000;
+  min-height: 100vh;
+  color: #f1f1f1;
+  position: relative;
+}
+
+/* navigation Settings */
+nav {
+  padding: 1rem;
+  background-color: #111111;
+}
+/* navigation list */
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+/* navigation list */
+.nav a {
+  color: #c6bcbc;
+  font-family: monospace;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+/* navigation links */
+.nav a.active {
+  border-bottom: 1px solid #b6b4b4;
+}
+
+/* background image settings*/
+.page-container {
+  position: relative;
+}
+
+.backgroundimage {
+  width: 100%;
+  margin-top: 1rem; 
+}
+
+.backgroundimage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* text in the home page */
+.texthome {
+  position: relative;
+  z-index: 1;
+  text-align: justify;
+  font-size: 3.5rem;
+  font-weight: 100;
+  font-family: 'IBMPlexMono', monospace;
+  color: #ffffff;
+  margin: 0rem 0rem 0rem; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* 2nd PAGE, MAP*/
+/* text on the top*/
+
+.textcontainer {
+  position: relative;
+  padding: 0rem 0 3rem 0;
+}
+
+.textmap {
+  text-align: center;
+  font-family: 'IBMPlexMono', monospace;
+  font-size: 3rem;
+  font-weight: 200; 
+  max-width: 800px; 
+  margin: 2rem auto 0 auto; 
+  padding: 0 1rem;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* map and legend*/
+/* map */
+.mapsection {
+  text-align: center;
+  margin: 0.5rem auto;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.mapcontainer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.mapimage {
+  width: 100%;
+  height: auto;
+}
+
+/* icons */
+.map-icon {
+  position: absolute;
+  width: 32px;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+/* legend */
+.legendbox {
+  text-align: center; 
+  margin: 3rem auto;
+  padding: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #1a2835;
+  border: 0.5px solid #555;
+  color: #ddd;
+  border-radius: 0px;
+}
+
+.legendtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legendlist {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start; 
+}
+
+
+.legendlist li {
+  display: flex;
+  font-family: 'IBMPlexMono';
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.legendicon {
+  width: 28px;
+  height: auto;
+}
+
+
+/* 3RD PAGE SHOOTING SETTINGS */
+
+
+/* text */
+.textshooting {
+  text-align: left;
+  padding: 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* image */
+.pagebackground {
+  display: flex;
+  align-items: center; 
+} 
+
+.Paperimage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+.Paperimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+/* 4 PAGE SILENCE SETTINGS */
+
+/* text */
+.textsilence {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-family: 'IBMPlexMono';
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 5rem; 
+}
+
+/* text animation*/
+.textsilence p {
+  opacity: 0;
+  animation: fadeIn 5s ease forwards;
+  animation-delay: 0.5s;  
+  animation-iteration-count: infinite; 
+  animation-direction: alternate; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px); 
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 4 PAGE LIGHT SETTINGS */
+
+.textlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: #cccccc;
+  font-size: 1.0rem;
+  line-height: 1.6;
+}
+
+.bodylight {
+  font-family: 'IBMPlexMono';
+  background-color: #000000;
+  color: #f1f1f1;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  animation: flickerBackground 3s infinite alternate; 
+}
+ /* background animation*/ 
+@keyframes flickerBackground {
+  0% {
+    background-color: #000000; 
+  }
+  40% {
+    background-color: #222222; 
+  }
+  48% {
+    background-color: #ffe8b5; 
+  }
+  52% {
+    background-color: #fffbf0; 
+  }
+  58% {
+    background-color: #333333; 
+  }
+  100% {
+    background-color: #000000; 
+  }
+}
+
+
+/* 5 PAGE WINDOW SETTINGS */
+
+.windowscene {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
+  padding: 0 8rem; 
+}
+
+.textwindow{
+  flex: 1 1 40%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  color: #cccccc;
+  font-family: 'IBMPlexMono';
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 2rem;
+}
+ /* window animation*/ 
+.windowframe {
+  width: 200px;
+  height: 250px;
+  border: 3px solid #cccccc;
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  position: relative;
+  animation: pulseWindow 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulseWindow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.10);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 6 PAGE SCREEN SETTINGS */
+
+.screenscene {
+  background-color: #000000;
+  color: #c11010;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.textscreen {
+  flex: 1 1 40%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  color: #fb0000;
+  font-family: 'IBMPlexMono';
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.liveblock {
+  width: 100%; 
+  text-align: center; 
+  font-family: 'IBMPlexMono';
+  font-size: 3rem;
+  color: #000000;
+  background-color: #ff3333; 
+  padding: 0.5rem 0;
+  animation: blinkLive 1s infinite alternate;
+  letter-spacing: 5px; 
+  text-transform: uppercase;
+}
+
+  /* window animation*/ 
+
+@keyframes blinkLive {
+  0% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
